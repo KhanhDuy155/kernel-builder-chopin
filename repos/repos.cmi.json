@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "bxsj-KernelSU-Proton-release",
-      "repo": "https://github.com/AOSP-13-Mediatek/kernel_xiaomi_chopin",
-      "branch": "r",
+      "name": "Chopin-Android13-SukiSU-SUSFS",
+      "repo": "https://github.com/maoyihao/android_kernel_chopin_android_T",
+      "branch": "T",
       "device": "chopin",
-      "defconfig": "chopin_user_defconfig"
+      "defconfig": "chopin_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false, 
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
@@ -16,7 +16,7 @@
         "binPath": ["bin"]
       }
     ],
-    "ccache": false,
+    "ccache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
@@ -39,8 +39,8 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/osm0sis/AnyKernel3",
-      "branch": "master"
+      "repo": "https://github.com/easterNday/AnyKernel3/",
+      "branch": "chopin"
     }
   }
 ]
